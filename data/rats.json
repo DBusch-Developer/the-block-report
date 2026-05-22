@@ -1,0 +1,2087 @@
+{
+  "stats": {
+    "total": 387,
+    "peak_borough": "Brooklyn",
+    "peak_borough_count": 125,
+    "peak_borough_pct": 32,
+    "peak_month": 5,
+    "peak_month_count": 41,
+    "top_zip": "11224",
+    "top_zip_borough": "Brooklyn",
+    "top_zip_count": 7
+  },
+  "points": [
+    {
+      "lat": 40.759356,
+      "lng": -73.818475,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.601238,
+      "lng": -74.031703,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.906952,
+      "lng": -73.82005,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.611601,
+      "lng": -73.948853,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.598461,
+      "lng": -73.95762,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.715052,
+      "lng": -73.989935,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.680694,
+      "lng": -73.73232,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.781662,
+      "lng": -73.983075,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.711936,
+      "lng": -73.814087,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.517328,
+      "lng": -74.16,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.654708,
+      "lng": -74.027197,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.778174,
+      "lng": -73.984091,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.698045,
+      "lng": -73.949089,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.804955,
+      "lng": -73.914171,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.85619,
+      "lng": -73.806673,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.79259,
+      "lng": -73.947432,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.568997,
+      "lng": -73.783529,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.789756,
+      "lng": -73.784899,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.600716,
+      "lng": -74.231011,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.671252,
+      "lng": -73.779735,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.860443,
+      "lng": -73.787871,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.7695,
+      "lng": -73.703943,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.612352,
+      "lng": -73.96768,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.716815,
+      "lng": -73.860124,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.824859,
+      "lng": -73.808778,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.825602,
+      "lng": -73.946849,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.639104,
+      "lng": -73.979891,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.622665,
+      "lng": -74.027445,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.717494,
+      "lng": -73.924199,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.667392,
+      "lng": -73.866374,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.619917,
+      "lng": -73.866543,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.911224,
+      "lng": -73.90296,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.573527,
+      "lng": -73.939466,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.744618,
+      "lng": -73.928166,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.627092,
+      "lng": -74.188292,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.794412,
+      "lng": -73.863487,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.621303,
+      "lng": -74.22162,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.821794,
+      "lng": -73.785842,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.769295,
+      "lng": -73.932568,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.630817,
+      "lng": -73.94508,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.61899,
+      "lng": -73.916664,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.850716,
+      "lng": -73.967675,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.710754,
+      "lng": -73.896721,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.647218,
+      "lng": -73.890033,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.659981,
+      "lng": -73.801981,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.63174,
+      "lng": -73.918428,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.813562,
+      "lng": -73.919924,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.845442,
+      "lng": -73.867063,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.563664,
+      "lng": -73.806276,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.755176,
+      "lng": -73.918261,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.900857,
+      "lng": -73.857294,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.613476,
+      "lng": -73.734353,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.597254,
+      "lng": -73.870423,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.71434,
+      "lng": -73.863996,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.691421,
+      "lng": -73.897514,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.664969,
+      "lng": -73.846276,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.666037,
+      "lng": -73.955846,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.873054,
+      "lng": -73.980334,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.606339,
+      "lng": -74.190979,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.6432,
+      "lng": -74.02944,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.703929,
+      "lng": -73.955531,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.580716,
+      "lng": -73.885491,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.786856,
+      "lng": -73.745007,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.83693,
+      "lng": -73.828501,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.650817,
+      "lng": -74.219573,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.850799,
+      "lng": -73.913172,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.644625,
+      "lng": -73.860389,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.562621,
+      "lng": -74.226253,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.624443,
+      "lng": -73.941841,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.639355,
+      "lng": -73.966111,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.816434,
+      "lng": -73.946308,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.571653,
+      "lng": -73.916739,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.607626,
+      "lng": -73.985359,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.799144,
+      "lng": -73.80887,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.656751,
+      "lng": -73.956867,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.859007,
+      "lng": -73.805024,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.781937,
+      "lng": -73.854866,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.854599,
+      "lng": -73.910025,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.580056,
+      "lng": -73.990362,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.658979,
+      "lng": -73.967081,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.786918,
+      "lng": -73.956981,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.790973,
+      "lng": -73.98207,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.847531,
+      "lng": -73.959443,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.57986,
+      "lng": -73.967029,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.760471,
+      "lng": -73.944964,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.819881,
+      "lng": -73.891454,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.579818,
+      "lng": -74.019297,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.561265,
+      "lng": -73.719898,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.90815,
+      "lng": -73.760366,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.753622,
+      "lng": -73.922853,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.668671,
+      "lng": -73.973544,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.861085,
+      "lng": -73.80883,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.853049,
+      "lng": -73.961386,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.520178,
+      "lng": -74.222775,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.606651,
+      "lng": -74.014613,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.693338,
+      "lng": -73.958682,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.794596,
+      "lng": -73.849856,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.598634,
+      "lng": -73.869626,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.780164,
+      "lng": -73.822472,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.812279,
+      "lng": -73.913837,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.626053,
+      "lng": -73.952205,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.608738,
+      "lng": -73.758339,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.696395,
+      "lng": -73.866302,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.624376,
+      "lng": -74.018984,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.701455,
+      "lng": -73.907683,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.849222,
+      "lng": -73.940305,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.574889,
+      "lng": -73.970793,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.713423,
+      "lng": -73.920609,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.791159,
+      "lng": -74.006155,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.677986,
+      "lng": -73.78484,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.542729,
+      "lng": -73.786858,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.596719,
+      "lng": -74.034102,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.676848,
+      "lng": -73.971782,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.695473,
+      "lng": -73.892555,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.647295,
+      "lng": -73.883425,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.801329,
+      "lng": -73.907963,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.580375,
+      "lng": -73.864248,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.779741,
+      "lng": -74.004362,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.626347,
+      "lng": -73.998795,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.627912,
+      "lng": -73.759168,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.805745,
+      "lng": -73.991879,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.813691,
+      "lng": -73.910678,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.817081,
+      "lng": -73.981571,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.546203,
+      "lng": -73.926108,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.645966,
+      "lng": -73.947598,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.876898,
+      "lng": -73.96858,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.703622,
+      "lng": -73.71101,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.641531,
+      "lng": -74.116912,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.752736,
+      "lng": -73.940885,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.64091,
+      "lng": -73.881686,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.661255,
+      "lng": -73.893281,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.845423,
+      "lng": -73.930942,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.681384,
+      "lng": -73.966477,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.729982,
+      "lng": -73.919739,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.843474,
+      "lng": -73.939959,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.746371,
+      "lng": -73.925355,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.777119,
+      "lng": -73.930228,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.620278,
+      "lng": -74.01781,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.821538,
+      "lng": -73.808192,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.644498,
+      "lng": -73.933491,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.586232,
+      "lng": -74.119242,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.585566,
+      "lng": -74.012097,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.904255,
+      "lng": -73.832059,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.615546,
+      "lng": -73.874415,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.692412,
+      "lng": -73.83937,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.639342,
+      "lng": -73.912846,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.879784,
+      "lng": -73.859548,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.644812,
+      "lng": -73.874632,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.78866,
+      "lng": -73.960041,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.803216,
+      "lng": -74.005315,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.837769,
+      "lng": -73.925566,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.813387,
+      "lng": -73.753831,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.631991,
+      "lng": -73.879581,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.71566,
+      "lng": -73.904286,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.788266,
+      "lng": -73.89067,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.653682,
+      "lng": -73.707632,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.606405,
+      "lng": -74.193982,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.786515,
+      "lng": -73.866696,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.59729,
+      "lng": -73.867109,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.87141,
+      "lng": -73.967784,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.617905,
+      "lng": -73.800604,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.834352,
+      "lng": -73.947026,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.545578,
+      "lng": -73.898027,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.617286,
+      "lng": -73.988981,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.848472,
+      "lng": -73.93527,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.803999,
+      "lng": -73.917994,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.761666,
+      "lng": -74.017134,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.573937,
+      "lng": -74.191775,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.616631,
+      "lng": -73.957373,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.724601,
+      "lng": -73.824698,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.592781,
+      "lng": -74.101634,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.572751,
+      "lng": -73.905895,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.69095,
+      "lng": -73.928331,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.705967,
+      "lng": -73.932529,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.803848,
+      "lng": -73.99201,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.885611,
+      "lng": -73.845771,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.70339,
+      "lng": -73.904384,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.547613,
+      "lng": -73.871036,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.687063,
+      "lng": -73.806222,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.621436,
+      "lng": -73.748923,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.652529,
+      "lng": -73.855088,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.64856,
+      "lng": -74.017978,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.816077,
+      "lng": -73.792181,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.732789,
+      "lng": -73.971014,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.89083,
+      "lng": -73.797049,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.658324,
+      "lng": -73.895724,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.595507,
+      "lng": -73.91271,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.602516,
+      "lng": -73.929593,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.719253,
+      "lng": -73.766948,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.594278,
+      "lng": -74.137908,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.854557,
+      "lng": -73.797058,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.635692,
+      "lng": -74.03054,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.564752,
+      "lng": -73.77514,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.671369,
+      "lng": -73.905779,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.75194,
+      "lng": -73.874784,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.767949,
+      "lng": -73.955575,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.614504,
+      "lng": -73.855284,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.791817,
+      "lng": -73.778561,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.662723,
+      "lng": -73.906885,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.645039,
+      "lng": -73.885051,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.665881,
+      "lng": -73.935204,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.696395,
+      "lng": -73.937503,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.735726,
+      "lng": -73.888417,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.549742,
+      "lng": -73.843982,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.576308,
+      "lng": -73.866803,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.50372,
+      "lng": -74.125321,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.628039,
+      "lng": -74.179341,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.766626,
+      "lng": -73.993833,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.658777,
+      "lng": -73.986058,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.733594,
+      "lng": -73.987374,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.883335,
+      "lng": -73.861114,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.710425,
+      "lng": -73.905011,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.871166,
+      "lng": -73.941157,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.567967,
+      "lng": -73.736599,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.67065,
+      "lng": -73.861604,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.810914,
+      "lng": -73.854845,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.733163,
+      "lng": -73.736356,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.579051,
+      "lng": -73.735217,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.573852,
+      "lng": -74.001874,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.710298,
+      "lng": -73.745058,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.617195,
+      "lng": -74.077412,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.832106,
+      "lng": -73.943964,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.655428,
+      "lng": -73.892908,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.593027,
+      "lng": -73.993871,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.848688,
+      "lng": -73.931857,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.529704,
+      "lng": -74.116191,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.57737,
+      "lng": -73.901085,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.638126,
+      "lng": -73.87398,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.749441,
+      "lng": -73.990397,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.79305,
+      "lng": -73.82325,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.753646,
+      "lng": -73.923501,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.684919,
+      "lng": -73.956813,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.706221,
+      "lng": -73.880454,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.629576,
+      "lng": -74.02335,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.626108,
+      "lng": -73.796031,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.731537,
+      "lng": -74.00426,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.730553,
+      "lng": -73.934852,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.676429,
+      "lng": -73.949855,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.575808,
+      "lng": -73.996652,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.739874,
+      "lng": -73.992559,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.708659,
+      "lng": -73.743641,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.660934,
+      "lng": -73.957092,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.738063,
+      "lng": -73.959257,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.878537,
+      "lng": -73.938369,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.838124,
+      "lng": -73.763975,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.652314,
+      "lng": -73.94787,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.562356,
+      "lng": -74.106716,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.610969,
+      "lng": -73.981487,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.834979,
+      "lng": -73.924627,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.824006,
+      "lng": -73.940297,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.720617,
+      "lng": -73.738334,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.815801,
+      "lng": -73.825119,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.861722,
+      "lng": -73.793078,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.824914,
+      "lng": -73.820135,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.71606,
+      "lng": -73.914253,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.590519,
+      "lng": -73.739404,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.757437,
+      "lng": -73.935256,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.828994,
+      "lng": -74.012185,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.549144,
+      "lng": -74.208443,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.873537,
+      "lng": -73.920972,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.772872,
+      "lng": -73.886547,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.860713,
+      "lng": -73.945539,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.582585,
+      "lng": -73.889843,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.784272,
+      "lng": -73.931063,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.817575,
+      "lng": -73.834286,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.696773,
+      "lng": -73.769446,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.542286,
+      "lng": -73.81715,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.703932,
+      "lng": -74.008551,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.73037,
+      "lng": -73.924542,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.829024,
+      "lng": -73.774971,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.691602,
+      "lng": -74.030189,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.900983,
+      "lng": -73.813506,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.778043,
+      "lng": -73.991172,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.585558,
+      "lng": -73.935533,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.868752,
+      "lng": -73.921435,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.647762,
+      "lng": -73.989662,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.681645,
+      "lng": -73.871794,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.697321,
+      "lng": -74.030569,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.796325,
+      "lng": -73.925305,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.840764,
+      "lng": -73.749856,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.5879,
+      "lng": -73.851403,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.714558,
+      "lng": -73.921046,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.721866,
+      "lng": -73.913647,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.662059,
+      "lng": -73.861831,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.854875,
+      "lng": -73.932203,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.703291,
+      "lng": -73.770649,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.608261,
+      "lng": -73.985684,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.646099,
+      "lng": -74.095852,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.572508,
+      "lng": -73.927395,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.631111,
+      "lng": -73.757259,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.572999,
+      "lng": -73.926913,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.787607,
+      "lng": -73.923245,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.86453,
+      "lng": -73.797646,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.691462,
+      "lng": -73.862757,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.760396,
+      "lng": -73.895905,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.60618,
+      "lng": -73.914301,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.802029,
+      "lng": -73.791155,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.715103,
+      "lng": -73.995929,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.626473,
+      "lng": -74.151898,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.603035,
+      "lng": -73.836288,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.683535,
+      "lng": -74.010531,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.531832,
+      "lng": -74.115317,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.79152,
+      "lng": -73.758372,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.706138,
+      "lng": -73.93989,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.711769,
+      "lng": -73.958005,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.591958,
+      "lng": -73.909219,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.846627,
+      "lng": -73.926293,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.667782,
+      "lng": -73.868447,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.595596,
+      "lng": -73.757303,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.703482,
+      "lng": -73.884481,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.633597,
+      "lng": -73.880925,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.736133,
+      "lng": -73.903709,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.69586,
+      "lng": -73.900157,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.851282,
+      "lng": -73.920532,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.776799,
+      "lng": -73.864678,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.836435,
+      "lng": -73.761362,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.85532,
+      "lng": -73.987476,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.90644,
+      "lng": -73.926751,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.834264,
+      "lng": -73.985522,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.847087,
+      "lng": -73.815651,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.711562,
+      "lng": -73.969485,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.894369,
+      "lng": -73.930409,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.874839,
+      "lng": -73.811328,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.633053,
+      "lng": -73.866298,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.578966,
+      "lng": -73.905567,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.834806,
+      "lng": -73.913189,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.61105,
+      "lng": -73.907771,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.750799,
+      "lng": -73.963187,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.650501,
+      "lng": -73.950363,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.908179,
+      "lng": -73.748374,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.802798,
+      "lng": -73.78189,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.885152,
+      "lng": -73.84543,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.54716,
+      "lng": -73.957654,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.788011,
+      "lng": -73.943243,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.751713,
+      "lng": -73.72277,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.614494,
+      "lng": -73.896128,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.794603,
+      "lng": -73.940413,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.720733,
+      "lng": -73.942288,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.910691,
+      "lng": -73.836588,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.863905,
+      "lng": -73.910065,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.903525,
+      "lng": -73.814729,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.708827,
+      "lng": -73.961499,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.591458,
+      "lng": -73.888415,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.584,
+      "lng": -74.011503,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.574604,
+      "lng": -73.913239,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.858903,
+      "lng": -73.965818,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.65079,
+      "lng": -73.94532,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.66362,
+      "lng": -73.906629,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.62581,
+      "lng": -73.785052,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.642904,
+      "lng": -73.987008,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.537358,
+      "lng": -74.159348,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.715915,
+      "lng": -73.707716,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.776625,
+      "lng": -73.96002,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.550039,
+      "lng": -73.921582,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.790185,
+      "lng": -73.747366,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.638328,
+      "lng": -74.03656,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.694163,
+      "lng": -74.033135,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.773759,
+      "lng": -74.014582,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.661913,
+      "lng": -73.933578,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.64734,
+      "lng": -73.901281,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.617502,
+      "lng": -73.867897,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.604236,
+      "lng": -74.231102,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.640787,
+      "lng": -73.933415,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.848238,
+      "lng": -73.953524,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.892679,
+      "lng": -73.929041,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.77457,
+      "lng": -73.916779,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.793793,
+      "lng": -73.967841,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.799156,
+      "lng": -73.99663,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.585471,
+      "lng": -74.179832,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.755019,
+      "lng": -73.944649,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.633165,
+      "lng": -73.949227,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.660258,
+      "lng": -73.928635,
+      "desc": "Condition Attracting Rodents"
+    },
+    {
+      "lat": 40.856402,
+      "lng": -73.752026,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.595089,
+      "lng": -73.864209,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.715066,
+      "lng": -73.753425,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.768765,
+      "lng": -73.82738,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.594359,
+      "lng": -73.905632,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.660427,
+      "lng": -73.700541,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.583764,
+      "lng": -73.818472,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.777386,
+      "lng": -73.867227,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.861229,
+      "lng": -73.770014,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.805362,
+      "lng": -73.925982,
+      "desc": "Rat Sighting"
+    },
+    {
+      "lat": 40.829875,
+      "lng": -73.827405,
+      "desc": "Signs of Rodents"
+    },
+    {
+      "lat": 40.864312,
+      "lng": -74.014019,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.606293,
+      "lng": -73.955882,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.862321,
+      "lng": -73.885044,
+      "desc": "Mouse Sighting"
+    },
+    {
+      "lat": 40.760817,
+      "lng": -73.909165,
+      "desc": "Signs of Rodents"
+    }
+  ],
+  "boroughs": [
+    {
+      "borough": "Brooklyn",
+      "count": 125
+    },
+    {
+      "borough": "Queens",
+      "count": 95
+    },
+    {
+      "borough": "Manhattan",
+      "count": 79
+    },
+    {
+      "borough": "Bronx",
+      "count": 62
+    },
+    {
+      "borough": "Staten Island",
+      "count": 26
+    }
+  ],
+  "monthly": [
+    {
+      "month": 1,
+      "count": 36
+    },
+    {
+      "month": 2,
+      "count": 20
+    },
+    {
+      "month": 3,
+      "count": 26
+    },
+    {
+      "month": 4,
+      "count": 33
+    },
+    {
+      "month": 5,
+      "count": 41
+    },
+    {
+      "month": 6,
+      "count": 40
+    },
+    {
+      "month": 7,
+      "count": 32
+    },
+    {
+      "month": 8,
+      "count": 39
+    },
+    {
+      "month": 9,
+      "count": 38
+    },
+    {
+      "month": 10,
+      "count": 37
+    },
+    {
+      "month": 11,
+      "count": 26
+    },
+    {
+      "month": 12,
+      "count": 19
+    }
+  ],
+  "topZips": [
+    {
+      "zip": "11224",
+      "borough": "Brooklyn",
+      "count": 7
+    },
+    {
+      "zip": "11220",
+      "borough": "Brooklyn",
+      "count": 7
+    },
+    {
+      "zip": "11217",
+      "borough": "Brooklyn",
+      "count": 6
+    },
+    {
+      "zip": "11206",
+      "borough": "Brooklyn",
+      "count": 6
+    },
+    {
+      "zip": "10029",
+      "borough": "Manhattan",
+      "count": 6
+    }
+  ],
+  "samples": [
+    {
+      "datetime": "2023-05-07 12:59:32",
+      "descriptor": "Signs of Rodents",
+      "borough": "Manhattan",
+      "zip": "10029"
+    },
+    {
+      "datetime": "2023-08-28 12:12:35",
+      "descriptor": "Rat Sighting",
+      "borough": "Manhattan",
+      "zip": "10002"
+    },
+    {
+      "datetime": "2023-09-02 11:52:41",
+      "descriptor": "Signs of Rodents",
+      "borough": "Bronx",
+      "zip": "10459"
+    },
+    {
+      "datetime": "2023-12-08 16:32:13",
+      "descriptor": "Mouse Sighting",
+      "borough": "Staten Island",
+      "zip": "10303"
+    },
+    {
+      "datetime": "2023-04-23 22:01:09",
+      "descriptor": "Signs of Rodents",
+      "borough": "Bronx",
+      "zip": "10463"
+    },
+    {
+      "datetime": "2023-03-14 17:14:24",
+      "descriptor": "Mouse Sighting",
+      "borough": "Manhattan",
+      "zip": "10010"
+    }
+  ]
+}
