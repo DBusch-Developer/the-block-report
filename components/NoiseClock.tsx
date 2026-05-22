@@ -65,6 +65,10 @@ export default function NoiseClock({
     range: [0, MAX_BAR],
   });
 
+  // Round to 3 decimals — prevents float precision drift between
+  // server-rendered HTML and client React state (hydration mismatch).
+  const r = (n: number) => Math.round(n * 1000) / 1000;
+
   const [hover, setHover] = useState<{
     hour: number;
     count: number;
@@ -78,10 +82,10 @@ export default function NoiseClock({
     return {
       hour,
       count,
-      ix: INNER_R * Math.cos(angleRad),
-      iy: INNER_R * Math.sin(angleRad),
-      ox: (INNER_R + scaled) * Math.cos(angleRad),
-      oy: (INNER_R + scaled) * Math.sin(angleRad),
+      ix: r(INNER_R * Math.cos(angleRad)),
+      iy: r(INNER_R * Math.sin(angleRad)),
+      ox: r((INNER_R + scaled) * Math.cos(angleRad)),
+      oy: r((INNER_R + scaled) * Math.sin(angleRad)),
       isLate: LATE_NIGHT.has(hour),
     };
   });
@@ -89,14 +93,14 @@ export default function NoiseClock({
   const peakHour = data.find((d) => d.hour === 23)!;
   const peakAngle = ((23 * 15 - 90) * Math.PI) / 180;
   const peakOuter = INNER_R + radiusScale(peakHour.count);
-  const peakX = peakOuter * Math.cos(peakAngle);
-  const peakY = peakOuter * Math.sin(peakAngle);
+  const peakX = r(peakOuter * Math.cos(peakAngle));
+  const peakY = r(peakOuter * Math.sin(peakAngle));
 
   const cliffHour = data.find((d) => d.hour === 3)!;
   const cliffAngle = ((3 * 15 - 90) * Math.PI) / 180;
   const cliffOuter = INNER_R + radiusScale(cliffHour.count);
-  const cliffX = cliffOuter * Math.cos(cliffAngle);
-  const cliffY = cliffOuter * Math.sin(cliffAngle);
+  const cliffX = r(cliffOuter * Math.cos(cliffAngle));
+  const cliffY = r(cliffOuter * Math.sin(cliffAngle));
 
   const handleEnter = (e: React.MouseEvent, hour: number, count: number) => {
     setHover({ hour, count, x: e.clientX, y: e.clientY });

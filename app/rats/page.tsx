@@ -21,7 +21,13 @@ export default function RatsPage() {
   const rats = getRatsPageData();
 
   return (
-    <main style={{ maxWidth: 920, margin: "0 auto", padding: "20px 24px 80px" }}>
+    <main
+      style={{
+        maxWidth: 920,
+        margin: "0 auto",
+        padding: "20px clamp(16px, 5vw, 24px) 80px",
+      }}
+    >
       <Masthead current="rats" />
 
       <article style={{ maxWidth: 780, margin: "0 auto" }}>
@@ -79,7 +85,7 @@ export default function RatsPage() {
               className="serif"
               style={{
                 float: "left",
-                fontSize: 78,
+                fontSize: "clamp(56px, 13vw, 78px)",
                 lineHeight: 0.85,
                 fontWeight: 700,
                 marginRight: 10,
@@ -163,12 +169,12 @@ export default function RatsPage() {
                 key={z.zip}
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "28px 90px 1fr 80px",
+                  gridTemplateColumns: "24px 72px 1fr auto",
                   alignItems: "baseline",
                   padding: "14px 0",
                   borderBottom:
                     i < rats.topZips.length - 1 ? "0.5px solid #00000022" : "none",
-                  gap: 14,
+                  gap: 12,
                 }}
               >
                 <span
@@ -231,7 +237,7 @@ export default function RatsPage() {
           paddingTop: 32,
           borderTop: "1px solid var(--ink)",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
           gap: 24,
         }}
       >
@@ -255,7 +261,6 @@ export default function RatsPage() {
             textDecoration: "none",
             color: "var(--ink)",
             display: "block",
-            textAlign: "right",
           }}
         >
           <div className="eyebrow" style={{ color: ACCENTS.noise }}>

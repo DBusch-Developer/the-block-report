@@ -14,7 +14,7 @@ const MapNYCInner = dynamic(() => import("./MapNYCInner"), {
   loading: () => (
     <div
       style={{
-        height: 520,
+        height: "clamp(360px, 65vh, 520px)",
         background: "var(--paper)",
         border: "1px solid var(--ink)",
         display: "flex",

@@ -22,9 +22,6 @@ export const metadata: Metadata = {
   },
   description:
     "Three stories from NYC's 311 data: when the city complains about noise, where the rats are, and when pothole season hits.",
-     icons: {
-    icon: "/tbr-favicon.png",
-  },
 };
 
 export default function RootLayout({

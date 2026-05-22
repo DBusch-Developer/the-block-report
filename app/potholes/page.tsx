@@ -23,7 +23,13 @@ export default function PotholesPage() {
   const peakBorough = potholes.boroughs[0]?.borough;
 
   return (
-    <main style={{ maxWidth: 920, margin: "0 auto", padding: "20px 24px 80px" }}>
+    <main
+      style={{
+        maxWidth: 920,
+        margin: "0 auto",
+        padding: "20px clamp(16px, 5vw, 24px) 80px",
+      }}
+    >
       <Masthead current="potholes" />
 
       <article style={{ maxWidth: 780, margin: "0 auto" }}>
@@ -87,7 +93,7 @@ export default function PotholesPage() {
               className="serif"
               style={{
                 float: "left",
-                fontSize: 78,
+                fontSize: "clamp(56px, 13vw, 78px)",
                 lineHeight: 0.85,
                 fontWeight: 700,
                 marginRight: 10,
@@ -209,7 +215,7 @@ export default function PotholesPage() {
           paddingTop: 32,
           borderTop: "1px solid var(--ink)",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
           gap: 24,
         }}
       >
@@ -233,7 +239,6 @@ export default function PotholesPage() {
             textDecoration: "none",
             color: "var(--ink)",
             display: "block",
-            textAlign: "right",
           }}
         >
           <div className="eyebrow" style={{ color: ACCENTS.rats }}>

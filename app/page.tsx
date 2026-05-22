@@ -14,7 +14,13 @@ export default function NoisePage() {
   const noise = getNoisePageData();
 
   return (
-    <main style={{ maxWidth: 920, margin: "0 auto", padding: "20px 24px 80px" }}>
+    <main
+      style={{
+        maxWidth: 920,
+        margin: "0 auto",
+        padding: "20px clamp(16px, 5vw, 24px) 80px",
+      }}
+    >
       <Masthead current="noise" />
 
       <article style={{ maxWidth: 780, margin: "0 auto" }}>
@@ -64,7 +70,7 @@ export default function NoisePage() {
               className="serif"
               style={{
                 float: "left",
-                fontSize: 78,
+                fontSize: "clamp(56px, 13vw, 78px)",
                 lineHeight: 0.85,
                 fontWeight: 700,
                 marginRight: 10,
@@ -113,10 +119,11 @@ export default function NoisePage() {
             complaints filed between 10pm and 2am
           </p>
 
-          <div style={{ overflowX: "auto" }}>
+          <div style={{ overflowX: "auto", marginLeft: -8, marginRight: -8, paddingLeft: 8, paddingRight: 8 }}>
             <table
               style={{
                 width: "100%",
+                minWidth: 540,
                 borderCollapse: "collapse",
                 fontSize: 14,
               }}
@@ -229,7 +236,7 @@ export default function NoisePage() {
           paddingTop: 32,
           borderTop: "1px solid var(--ink)",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
           gap: 24,
         }}
         aria-label="Continue reading"

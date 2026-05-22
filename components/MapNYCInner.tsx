@@ -33,7 +33,7 @@ export default function MapNYC({
     return (
       <div
         style={{
-          height,
+          height: `clamp(360px, 65vh, ${height}px)`,
           background: "var(--paper)",
           border: "1px dashed var(--ink)",
           display: "flex",
@@ -59,7 +59,7 @@ export default function MapNYC({
   const tileUrl = `https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=${apiKey}`;
 
   return (
-    <div style={{ height, border: "1px solid var(--ink)" }}>
+    <div style={{ height: `clamp(360px, 65vh, ${height}px)`, border: "1px solid var(--ink)" }}>
       <MapContainer
         center={center}
         zoom={zoom}

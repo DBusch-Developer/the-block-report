@@ -62,6 +62,9 @@ export default function MonthlyBars({
     y: number;
   } | null>(null);
 
+  // Round to prevent float precision drift between SSR and client hydration
+  const r = (n: number) => Math.round(n * 1000) / 1000;
+
   return (
     <div style={{ position: "relative", width: "100%" }}>
       <svg
@@ -82,10 +85,10 @@ export default function MonthlyBars({
           />
 
           {data.map((d) => {
-            const barX = xScale(d.month) ?? 0;
-            const barWidth = xScale.bandwidth();
-            const barY = yScale(d.count);
-            const barHeight = innerHeight - barY;
+            const barX = r(xScale(d.month) ?? 0);
+            const barWidth = r(xScale.bandwidth());
+            const barY = r(yScale(d.count));
+            const barHeight = r(innerHeight - barY);
             const isPeak = d.month === peakMonth;
             const isTrough = d.month === troughMonth;
 

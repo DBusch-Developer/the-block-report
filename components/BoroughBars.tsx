@@ -50,6 +50,9 @@ export default function BoroughBars({
     y: number;
   } | null>(null);
 
+  // Round to prevent float precision drift between SSR and client hydration
+  const r = (n: number) => Math.round(n * 1000) / 1000;
+
   return (
     <div style={{ position: "relative", width: "100%" }}>
       <svg
@@ -61,9 +64,9 @@ export default function BoroughBars({
       >
         <Group left={MARGIN.left} top={MARGIN.top}>
           {data.map((d) => {
-            const barY = yScale(d.borough) ?? 0;
-            const barHeight = yScale.bandwidth();
-            const barWidth = xScale(d.count);
+            const barY = r(yScale(d.borough) ?? 0);
+            const barHeight = r(yScale.bandwidth());
+            const barWidth = r(xScale(d.count));
             const isPeak = d.borough === peakBorough;
             const pct = Math.round((100 * d.count) / total);
 
