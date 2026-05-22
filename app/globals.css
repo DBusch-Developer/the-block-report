@@ -4,7 +4,11 @@
   --ink-soft: #555555;
   --ink-faint: #888888;
   --rule: #0A0A0A;
+
+  /* Section accents — three historical pigments */
   --cinnabar: #D64A23;
+  --verdigris: #2D5F5D;
+  --ochre: #B57333;
 }
 
 * {
@@ -36,6 +40,17 @@ body {
   font-size: 11px;
   letter-spacing: 0.15em;
   font-weight: 500;
+}
+
+/* Leaflet override — match editorial paper background */
+.leaflet-container {
+  background: var(--paper);
+  font-family: var(--font-sans), Helvetica, sans-serif;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+  background: rgba(250, 250, 245, 0.85) !important;
 }
 
 @media (max-width: 640px) {

@@ -1,42 +1,31 @@
 import Masthead from "@/components/Masthead";
-import NYCMap from "@/components/NYCMap";
+import MapNYC from "@/components/MapNYC";
+import BoroughBars from "@/components/BoroughBars";
 import { getRatsPageData } from "@/lib/db";
+import { ACCENTS } from "@/lib/accents";
 import Link from "next/link";
 
 export const metadata = {
   title: "Brooklyn's rat problem, mapped",
 };
 
+const ACCENT = ACCENTS.rats;
+
 const monthName = (m: number) =>
   [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
   ][m - 1];
 
 export default function RatsPage() {
   const rats = getRatsPageData();
-  const maxBorough = Math.max(...rats.boroughs.map((b) => b.count));
-  const totalBorough = rats.boroughs.reduce((s, b) => s + b.count, 0);
 
   return (
     <main style={{ maxWidth: 920, margin: "0 auto", padding: "20px 24px 80px" }}>
       <Masthead current="rats" />
 
       <article style={{ maxWidth: 780, margin: "0 auto" }}>
-        <div
-          className="eyebrow"
-          style={{ color: "var(--cinnabar)", marginBottom: 14 }}
-        >
+        <div className="eyebrow" style={{ color: ACCENT, marginBottom: 14 }}>
           Wildlife
         </div>
 
@@ -66,25 +55,22 @@ export default function RatsPage() {
           }}
         >
           Of NYC&apos;s {rats.stats.total} rodent complaints to 311 in 2023,{" "}
-          {rats.stats.peak_borough_pct} percent — {rats.stats.peak_borough_count}{" "}
-          of them — came from a single borough.
+          {rats.stats.peak_borough_pct} percent —{" "}
+          {rats.stats.peak_borough_count} of them — came from a single borough.
         </p>
 
-        <section style={{ margin: "0 -8px 16px" }}>
-          <NYCMap
+        <section style={{ margin: "0 0 16px" }}>
+          <MapNYC
             points={rats.points}
-            ariaLabel={`Map of New York City showing the location of ${rats.points.length} rodent complaints to 311 in 2023, with dense clusters visible in Brooklyn`}
+            accentColor={ACCENT}
+            height={520}
           />
         </section>
         <p
           className="eyebrow"
-          style={{
-            textAlign: "center",
-            color: "var(--ink-soft)",
-            margin: "0 0 64px",
-          }}
+          style={{ textAlign: "center", color: "var(--ink-soft)", margin: "0 0 64px" }}
         >
-          One dot per complaint · {rats.points.length} total
+          One dot per complaint · {rats.points.length} total · pan and zoom
         </p>
 
         <section style={{ maxWidth: 620, margin: "0 auto 56px" }}>
@@ -102,24 +88,24 @@ export default function RatsPage() {
             >
               R
             </span>
-            odent complaints in New York City don&apos;t spread evenly. Brooklyn
-            took in {rats.stats.peak_borough_count} of the city&apos;s{" "}
-            {rats.stats.total} rodent calls to 311 in 2023, more than any other
-            borough — and four of the five ZIP codes with the most complaints
-            are in Brooklyn.
+            odent complaints in New York City don&apos;t spread evenly.
+            Brooklyn took in {rats.stats.peak_borough_count} of the city&apos;s{" "}
+            {rats.stats.total} rodent calls to 311 in 2023, more than any
+            other borough — and four of the five ZIP codes with the most
+            complaints are in Brooklyn.
           </p>
           <p style={{ marginBottom: 22 }}>
             The busiest single ZIP was {rats.stats.top_zip} in{" "}
             {rats.stats.top_zip_borough}, with {rats.stats.top_zip_count}{" "}
-            complaints. {monthName(rats.stats.peak_month)} 2023 was the year&apos;s
-            busiest month, with {rats.stats.peak_month_count} calls.
+            complaints. {monthName(rats.stats.peak_month)} 2023 was the
+            year&apos;s busiest month, with {rats.stats.peak_month_count} calls.
           </p>
           <p>
-            Not every report is a rat. Of the 387 rodent calls, 122 were filed
-            as &quot;Signs of Rodents,&quot; 102 as &quot;Mouse Sighting,&quot;
-            84 as &quot;Rat Sighting,&quot; and 79 as &quot;Condition
-            Attracting Rodents&quot; — the kind of call you make about the
-            uncovered trash bin two doors down.
+            Not every report is a rat. Of the {rats.stats.total} rodent calls,
+            122 were filed as &quot;Signs of Rodents,&quot; 102 as &quot;Mouse
+            Sighting,&quot; 84 as &quot;Rat Sighting,&quot; and 79 as
+            &quot;Condition Attracting Rodents&quot; — the kind of call you
+            make about the uncovered trash bin two doors down.
           </p>
         </section>
 
@@ -140,64 +126,15 @@ export default function RatsPage() {
             className="eyebrow"
             style={{ color: "var(--ink-soft)", margin: "0 0 28px" }}
           >
-            Rodent complaints filed in 2023
+            Rodent complaints filed in 2023 · hover for detail
           </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-            {rats.boroughs.map((b) => {
-              const pct = Math.round((b.count / totalBorough) * 100);
-              const isPeak = b.borough === rats.stats.peak_borough;
-              return (
-                <div
-                  key={b.borough}
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "130px 1fr 80px",
-                    alignItems: "center",
-                    gap: 14,
-                  }}
-                >
-                  <span
-                    className="eyebrow"
-                    style={{
-                      color: isPeak ? "var(--cinnabar)" : "var(--ink)",
-                      fontWeight: isPeak ? 700 : 500,
-                    }}
-                  >
-                    {b.borough}
-                  </span>
-                  <div
-                    style={{
-                      height: 18,
-                      background: "transparent",
-                      borderBottom: "1px solid #00000022",
-                      position: "relative",
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: `${(b.count / maxBorough) * 100}%`,
-                        height: "100%",
-                        background: isPeak ? "var(--cinnabar)" : "var(--ink)",
-                        opacity: isPeak ? 1 : 0.85,
-                      }}
-                    />
-                  </div>
-                  <span
-                    style={{
-                      fontFamily:
-                        "ui-monospace, SFMono-Regular, Menlo, monospace",
-                      fontSize: 13,
-                      color: "var(--ink-soft)",
-                      textAlign: "right",
-                    }}
-                  >
-                    {b.count} · {pct}%
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+          <BoroughBars
+            data={rats.boroughs}
+            peakBorough={rats.stats.peak_borough}
+            accentColor={ACCENT}
+            unitLabel="rodent calls"
+          />
         </section>
 
         <section style={{ marginBottom: 64 }}>
@@ -226,30 +163,23 @@ export default function RatsPage() {
                 key={z.zip}
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "28px 90px 1fr 60px",
+                  gridTemplateColumns: "28px 90px 1fr 80px",
                   alignItems: "baseline",
                   padding: "14px 0",
                   borderBottom:
-                    i < rats.topZips.length - 1
-                      ? "0.5px solid #00000022"
-                      : "none",
+                    i < rats.topZips.length - 1 ? "0.5px solid #00000022" : "none",
                   gap: 14,
                 }}
               >
                 <span
                   className="serif"
-                  style={{
-                    fontSize: 22,
-                    fontWeight: 700,
-                    color: "var(--ink-soft)",
-                  }}
+                  style={{ fontSize: 22, fontWeight: 700, color: "var(--ink-soft)" }}
                 >
                   {i + 1}
                 </span>
                 <span
                   style={{
-                    fontFamily:
-                      "ui-monospace, SFMono-Regular, Menlo, monospace",
+                    fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace",
                     fontSize: 15,
                     fontWeight: 500,
                   }}
@@ -259,10 +189,9 @@ export default function RatsPage() {
                 <span style={{ fontSize: 14 }}>{z.borough}</span>
                 <span
                   style={{
-                    fontFamily:
-                      "ui-monospace, SFMono-Regular, Menlo, monospace",
+                    fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace",
                     fontSize: 13,
-                    color: "var(--cinnabar)",
+                    color: ACCENT,
                     textAlign: "right",
                   }}
                 >
@@ -308,23 +237,14 @@ export default function RatsPage() {
       >
         <Link
           href="/potholes"
-          style={{
-            textDecoration: "none",
-            color: "var(--ink)",
-            display: "block",
-          }}
+          style={{ textDecoration: "none", color: "var(--ink)", display: "block" }}
         >
-          <div className="eyebrow" style={{ color: "var(--ink-soft)" }}>
+          <div className="eyebrow" style={{ color: ACCENTS.potholes }}>
             Next · Infrastructure
           </div>
           <div
             className="serif"
-            style={{
-              fontSize: 22,
-              fontWeight: 700,
-              lineHeight: 1.15,
-              marginTop: 6,
-            }}
+            style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.15, marginTop: 6 }}
           >
             Pothole season is real →
           </div>
@@ -338,17 +258,12 @@ export default function RatsPage() {
             textAlign: "right",
           }}
         >
-          <div className="eyebrow" style={{ color: "var(--ink-soft)" }}>
+          <div className="eyebrow" style={{ color: ACCENTS.noise }}>
             ← Back to · Public Disturbance
           </div>
           <div
             className="serif"
-            style={{
-              fontSize: 22,
-              fontWeight: 700,
-              lineHeight: 1.15,
-              marginTop: 6,
-            }}
+            style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.15, marginTop: 6 }}
           >
             44% of noise calls in 5 hours
           </div>

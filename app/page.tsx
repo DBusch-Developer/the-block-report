@@ -1,14 +1,18 @@
 import Masthead from "@/components/Masthead";
 import NoiseClock from "@/components/NoiseClock";
 import { getNoisePageData } from "@/lib/db";
+import { ACCENTS } from "@/lib/accents";
 import Link from "next/link";
 
 export const metadata = {
   title: "44% of NYC's noise calls in five hours",
 };
 
+const ACCENT = ACCENTS.noise;
+
 export default function NoisePage() {
   const noise = getNoisePageData();
+
   return (
     <main style={{ maxWidth: 920, margin: "0 auto", padding: "20px 24px 80px" }}>
       <Masthead current="noise" />
@@ -16,7 +20,7 @@ export default function NoisePage() {
       <article style={{ maxWidth: 780, margin: "0 auto" }}>
         <div
           className="eyebrow"
-          style={{ color: "var(--cinnabar)", marginBottom: 14 }}
+          style={{ color: ACCENT, marginBottom: 14 }}
         >
           Public Disturbance
         </div>
@@ -51,7 +55,7 @@ export default function NoisePage() {
         </p>
 
         <section style={{ margin: "0 -8px 64px" }}>
-          <NoiseClock data={noise.hourly} />
+          <NoiseClock data={noise.hourly} accentColor={ACCENT} />
         </section>
 
         <section style={{ maxWidth: 620, margin: "0 auto 72px" }}>
@@ -105,7 +109,8 @@ export default function NoisePage() {
             className="eyebrow"
             style={{ color: "var(--ink-soft)", margin: "0 0 28px" }}
           >
-            Sampled from the 1,534 complaints filed between 10pm and 2am
+            Sampled from the {noise.stats.late_night_count.toLocaleString()}{" "}
+            complaints filed between 10pm and 2am
           </p>
 
           <div style={{ overflowX: "auto" }}>
@@ -120,41 +125,25 @@ export default function NoisePage() {
                 <tr style={{ borderBottom: "1px solid var(--ink)" }}>
                   <th
                     className="eyebrow"
-                    style={{
-                      textAlign: "left",
-                      padding: "10px 8px 10px 0",
-                      fontWeight: 500,
-                    }}
+                    style={{ textAlign: "left", padding: "10px 8px 10px 0", fontWeight: 500 }}
                   >
                     Time
                   </th>
                   <th
                     className="eyebrow"
-                    style={{
-                      textAlign: "left",
-                      padding: "10px 8px",
-                      fontWeight: 500,
-                    }}
+                    style={{ textAlign: "left", padding: "10px 8px", fontWeight: 500 }}
                   >
                     Where
                   </th>
                   <th
                     className="eyebrow"
-                    style={{
-                      textAlign: "left",
-                      padding: "10px 8px",
-                      fontWeight: 500,
-                    }}
+                    style={{ textAlign: "left", padding: "10px 8px", fontWeight: 500 }}
                   >
                     What
                   </th>
                   <th
                     className="eyebrow"
-                    style={{
-                      textAlign: "left",
-                      padding: "10px 0 10px 8px",
-                      fontWeight: 500,
-                    }}
+                    style={{ textAlign: "left", padding: "10px 0 10px 8px", fontWeight: 500 }}
                   >
                     Outcome
                   </th>
@@ -163,24 +152,14 @@ export default function NoisePage() {
               <tbody>
                 {noise.samples.map((c, i) => {
                   const dt = new Date(c.datetime);
-                  const date = dt.toLocaleDateString("en-US", {
-                    month: "short",
-                    day: "numeric",
-                  });
-                  const time = dt.toLocaleTimeString("en-US", {
-                    hour: "numeric",
-                    minute: "2-digit",
-                  });
+                  const date = dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+                  const time = dt.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
                   return (
-                    <tr
-                      key={i}
-                      style={{ borderBottom: "0.5px solid #00000022" }}
-                    >
+                    <tr key={i} style={{ borderBottom: "0.5px solid #00000022" }}>
                       <td
                         style={{
                           padding: "18px 8px 18px 0",
-                          fontFamily:
-                            "ui-monospace, SFMono-Regular, Menlo, monospace",
+                          fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace",
                           fontSize: 12,
                           color: "var(--ink-soft)",
                           whiteSpace: "nowrap",
@@ -188,21 +167,17 @@ export default function NoisePage() {
                         }}
                       >
                         <div>{date}</div>
-                        <div style={{ color: "var(--cinnabar)" }}>{time}</div>
+                        <div style={{ color: ACCENT }}>{time}</div>
                       </td>
                       <td style={{ padding: "18px 8px", verticalAlign: "top" }}>
                         <div style={{ fontWeight: 500 }}>{c.borough}</div>
-                        <div
-                          style={{ color: "var(--ink-soft)", fontSize: 12 }}
-                        >
+                        <div style={{ color: "var(--ink-soft)", fontSize: 12 }}>
                           ZIP {c.zip}
                         </div>
                       </td>
                       <td style={{ padding: "18px 8px", verticalAlign: "top" }}>
                         <div style={{ fontWeight: 500 }}>{c.subtype}</div>
-                        <div
-                          style={{ color: "var(--ink-soft)", fontSize: 12 }}
-                        >
+                        <div style={{ color: "var(--ink-soft)", fontSize: 12 }}>
                           {c.descriptor}
                         </div>
                       </td>
@@ -261,46 +236,28 @@ export default function NoisePage() {
       >
         <Link
           href="/rats"
-          style={{
-            textDecoration: "none",
-            color: "var(--ink)",
-            display: "block",
-          }}
+          style={{ textDecoration: "none", color: "var(--ink)", display: "block" }}
         >
-          <div className="eyebrow" style={{ color: "var(--ink-soft)" }}>
+          <div className="eyebrow" style={{ color: ACCENTS.rats }}>
             Next · Wildlife
           </div>
           <div
             className="serif"
-            style={{
-              fontSize: 22,
-              fontWeight: 700,
-              lineHeight: 1.15,
-              marginTop: 6,
-            }}
+            style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.15, marginTop: 6 }}
           >
             Brooklyn&apos;s rat problem, mapped →
           </div>
         </Link>
         <Link
           href="/potholes"
-          style={{
-            textDecoration: "none",
-            color: "var(--ink)",
-            display: "block",
-          }}
+          style={{ textDecoration: "none", color: "var(--ink)", display: "block" }}
         >
-          <div className="eyebrow" style={{ color: "var(--ink-soft)" }}>
+          <div className="eyebrow" style={{ color: ACCENTS.potholes }}>
             Then · Infrastructure
           </div>
           <div
             className="serif"
-            style={{
-              fontSize: 22,
-              fontWeight: 700,
-              lineHeight: 1.15,
-              marginTop: 6,
-            }}
+            style={{ fontSize: 22, fontWeight: 700, lineHeight: 1.15, marginTop: 6 }}
           >
             Pothole season is real →
           </div>

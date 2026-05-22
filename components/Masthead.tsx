@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-type Section = "noise" | "rats" | "potholes";
+import { ACCENTS, type Section } from "@/lib/accents";
 
 const sections: { id: Section; label: string; href: string }[] = [
   { id: "noise", label: "Noise", href: "/" },
@@ -9,6 +8,8 @@ const sections: { id: Section; label: string; href: string }[] = [
 ];
 
 export default function Masthead({ current }: { current: Section }) {
+  const accent = ACCENTS[current];
+
   return (
     <header
       style={{
@@ -38,7 +39,7 @@ export default function Masthead({ current }: { current: Section }) {
         <h1
           className="serif"
           style={{
-            fontSize: "clamp(54px, 11vw, 96px)",
+            fontSize: "clamp(48px, 10vw, 88px)",
             lineHeight: 0.95,
             fontWeight: 700,
             letterSpacing: "-0.025em",
@@ -71,6 +72,7 @@ export default function Masthead({ current }: { current: Section }) {
       >
         {sections.map(({ id, label, href }) => {
           const isActive = current === id;
+          const sectionAccent = ACCENTS[id];
           return (
             <Link
               key={id}
@@ -78,9 +80,9 @@ export default function Masthead({ current }: { current: Section }) {
               className="eyebrow"
               style={{
                 textDecoration: "none",
-                color: isActive ? "var(--cinnabar)" : "var(--ink)",
+                color: isActive ? accent : "var(--ink)",
                 borderBottom: isActive
-                  ? "2px solid var(--cinnabar)"
+                  ? `2px solid ${sectionAccent}`
                   : "2px solid transparent",
                 paddingBottom: 3,
               }}

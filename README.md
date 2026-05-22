@@ -2,38 +2,52 @@
 
 A three-page editorial site exploring NYC's 2023 311 service request data.
 
-- **`/`** — *Public Disturbance:* 44% of NYC's noise calls happen in five hours
-- **`/rats`** — *Wildlife:* Brooklyn's rat problem, mapped
-- **`/potholes`** — *Infrastructure:* Pothole season is real
+- **`/`** — *Public Disturbance:* 44% of NYC's noise calls happen in five hours · cinnabar
+- **`/rats`** — *Wildlife:* Brooklyn's rat problem, mapped · verdigris
+- **`/potholes`** — *Infrastructure:* Pothole season is real · ochre
 
 ## Architecture
 
-This site uses a real SQLite database at build time. Pages are React Server Components that import query functions from `lib/db.ts` and call them directly — no API routes, no client-side fetch.
-
 ```
-app/                      → pages (Server Components, call SQL at build time)
-components/               → reusable UI (Masthead, NoiseClock, NYCMap)
-lib/db.ts                 → opens nyc_311_2023.db, exports query functions
-db/nyc_311_2023.db        → the actual SQLite file (committed to the repo)
-data/nyc-map.json         → NYC borough geometry (pre-projected SVG paths)
-next.config.ts            → tells webpack to leave better-sqlite3 alone
+app/                        → pages (Server Components, call SQL at build time)
+components/
+  Masthead.tsx              → shared newspaper header, per-page accent
+  NoiseClock.tsx            → Visx radial 24-hour bar chart (client)
+  MonthlyBars.tsx           → Visx vertical bar chart (client)
+  BoroughBars.tsx           → Visx horizontal bar chart (client)
+  MapNYC.tsx                → react-leaflet map with Stadia tiles (client)
+lib/
+  db.ts                     → opens nyc_311_2023.db, exports query functions
+  accents.ts                → per-page accent constants
+db/nyc_311_2023.db          → the SQLite source of truth (committed)
+next.config.ts              → leaves better-sqlite3 alone (native module)
+.env.local                  → Stadia API key (NOT committed)
+.env.example                → template
 ```
 
-At `next build`, SQL queries execute against the SQLite file and the results are baked into static HTML. The deployed site doesn't need the DB at runtime.
-
-To add a new question to the site:
-1. Write a new query function in `lib/db.ts`
-2. Import and call it from a page component
-3. Done — Next.js rebuilds and the new data is on the page
+Pages stay statically generated. SQL runs at `next build`. Charts and maps are client components that hydrate for interactivity.
 
 ## Setup
 
 ```bash
-npm install better-sqlite3
-npm install -D @types/better-sqlite3
+npm install
 ```
 
-(Native module — needs build tools if your platform doesn't have a prebuilt binary. Windows: usually works out of the box with Node 20+. If it fails, install Visual Studio Build Tools.)
+If you're picking this up fresh, the deps you need:
+```bash
+npm install better-sqlite3 @visx/group @visx/shape @visx/scale leaflet react-leaflet
+npm install -D @types/better-sqlite3 @types/leaflet
+```
+
+Get a **Stadia Maps API key** (free):
+1. Sign up at https://stadiamaps.com
+2. Create a Property
+3. Under Authentication Configuration, add `localhost:3000` and your Vercel domain
+4. Copy the API key
+5. Create `.env.local` in the project root:
+   ```
+   NEXT_PUBLIC_STADIA_API_KEY=your-key-here
+   ```
 
 Then:
 
@@ -43,9 +57,19 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Writing new queries
+## To tweak
 
-`lib/db.ts` opens the DB read-only and exposes helpers. Open it and read — three example query functions are there. To add a new one:
+- **Per-page colors** — `lib/accents.ts`. Three constants, three pages.
+- **Headlines and narrative** — plain JSX strings in each `app/<route>/page.tsx`.
+- **Chart annotations** — props on `<NoiseClock>` (peakLabel, cliffLabel, centerStat).
+- **Chart highlight rules** — `peakMonth`, `troughMonth`, `peakBorough` props on the bar chart components decide which bar gets the accent color.
+- **Map style** — change the tile URL in `MapNYC.tsx`. Stadia has multiple styles: `stamen_toner_lite` (current, B&W minimal), `stamen_toner` (high-contrast B&W), `alidade_smooth` (light gray), `outdoors` (color).
+- **Map dot styling** — `pointRadius`, `pointOpacity` props on `<MapNYC>`.
+- **Masthead text** — `components/Masthead.tsx`. Date is hardcoded — update when republishing.
+
+## To add a new SQL query
+
+`lib/db.ts` has three page-level functions. Pattern:
 
 ```ts
 export function getRatsByMonth() {
@@ -59,37 +83,29 @@ export function getRatsByMonth() {
 }
 ```
 
-Then in any page:
+Then import and call from any page:
 
 ```tsx
 import { getRatsByMonth } from "@/lib/db";
-
-export default function MyPage() {
-  const data = getRatsByMonth();
-  return <pre>{JSON.stringify(data, null, 2)}</pre>;
-}
+const data = getRatsByMonth();
 ```
 
-The SQLite VS Code extension you installed reads the same `.db` file — you can write and test queries against `db/nyc_311_2023.db` directly in the editor before moving them into `lib/db.ts`.
-
-## Design tokens
-
-In `app/globals.css`:
-- `--paper` `#FAFAF5` — page background
-- `--ink` `#0A0A0A` — main text and rules
-- `--ink-soft` `#555` — secondary text
-- `--cinnabar` `#D64A23` — sharp accent
+The SQLite VS Code extension reads `db/nyc_311_2023.db` directly — write and test queries in the editor before moving them into `lib/db.ts`.
 
 ## Deploy
 
 ```bash
 git add -A
-git commit -m "block report — issue 01"
-git push -u origin main
+git commit -m "issue 01"
+git push origin main
 ```
 
-Then on vercel.com → Import Project → pick your repo. Vercel auto-detects Next.js, installs `better-sqlite3` with the Linux prebuilt binary, runs `next build` against the `.db` file (which is in the repo), and serves the resulting static HTML. First deploy is usually under 90 seconds.
+Then on vercel.com → Import Project → pick your repo. On the deploy settings, add the env var:
+- Key: `NEXT_PUBLIC_STADIA_API_KEY`
+- Value: your Stadia key
 
-## Data source
+Vercel auto-detects Next.js, installs `better-sqlite3` with the Linux prebuilt binary, runs `next build` against `db/nyc_311_2023.db` (committed to your repo), bakes the SQL results into static HTML, and serves it. First deploy is usually under 90 seconds.
 
-NYC Open Data · 311 Service Requests, calendar year 2023. The SQLite file holds 25,000 rows in a single `service_requests` table with 25 columns (created/closed timestamps, complaint type and descriptor, borough, ZIP, lat/lng, resolution description, plus pre-computed convenience columns like `created_hour` and `created_month`).
+## Data provenance
+
+NYC Open Data · 311 Service Requests, calendar year 2023. 25,000 rows in a single `service_requests` table.
