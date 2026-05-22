@@ -130,8 +130,6 @@ export default function AtlasPage() {
             most-felt grievance.
           </p>
         </section>
-
-       
       </article>
 
       <nav
@@ -186,8 +184,20 @@ export default function AtlasPage() {
         }}
       >
         <span className="eyebrow">
-          Source: NYC Open Data · 311 Service Requests, 2023 · n ={" "}
-          {atlas.stats.total_complaints.toLocaleString()}
+          Source:{" "}
+          <a
+            href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "inherit",
+              textDecoration: "underline",
+              textUnderlineOffset: "2px",
+            }}
+          >
+            NYC Open Data · 311 Service Requests, 2023
+          </a>{" "}
+          · n = {atlas.stats.total_complaints.toLocaleString()}
         </span>
       </footer>
     </main>
