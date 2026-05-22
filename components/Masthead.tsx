@@ -5,6 +5,7 @@ const sections: { id: Section; label: string; href: string }[] = [
   { id: "noise", label: "Noise", href: "/" },
   { id: "rats", label: "Rats", href: "/rats" },
   { id: "potholes", label: "Potholes", href: "/potholes" },
+  { id: "atlas", label: "Atlas", href: "/atlas" },
 ];
 
 export default function Masthead({ current }: { current: Section }) {

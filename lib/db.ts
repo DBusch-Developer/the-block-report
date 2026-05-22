@@ -272,6 +272,102 @@ export function getRatsPageData(): RatsPageData {
 }
 
 // ============================================================
+// ATLAS PAGE — top complaint categories per borough
+// ============================================================
+
+export interface AtlasPageData {
+  stats: {
+    total_complaints: number;
+    borough_count: number;
+  };
+  boroughs: Array<{
+    borough: string;
+    total: number;
+    topCategories: Array<{
+      category: string;
+      count: number;
+      pct: number; // percent of this borough's total
+      rank: number;
+    }>;
+  }>;
+}
+
+export function getAtlasPageData(): AtlasPageData {
+  // CTE chain with a window function: top 5 complaint categories per borough,
+  // ranked within each borough by frequency. Joins per-borough totals so the
+  // page can compute each category's percentage of its borough's load.
+  const rows = db
+    .prepare(
+      `
+      WITH borough_totals AS (
+        SELECT borough, COUNT(*) AS total
+        FROM service_requests
+        WHERE borough != 'Unspecified'
+        GROUP BY borough
+      ),
+      borough_complaints AS (
+        SELECT
+          borough,
+          complaint_type,
+          COUNT(*) AS count
+        FROM service_requests
+        WHERE borough != 'Unspecified'
+        GROUP BY borough, complaint_type
+      ),
+      ranked AS (
+        SELECT
+          bc.borough,
+          bc.complaint_type,
+          bc.count,
+          bt.total AS borough_total,
+          ROW_NUMBER() OVER (PARTITION BY bc.borough ORDER BY bc.count DESC) AS rnk
+        FROM borough_complaints bc
+        JOIN borough_totals bt ON bt.borough = bc.borough
+      )
+      SELECT borough, complaint_type, count, borough_total, rnk
+      FROM ranked
+      WHERE rnk <= 5
+      ORDER BY borough_total DESC, rnk
+      `
+    )
+    .all() as {
+      borough: string;
+      complaint_type: string;
+      count: number;
+      borough_total: number;
+      rnk: number;
+    }[];
+
+  const boroughMap = new Map<string, AtlasPageData["boroughs"][number]>();
+  for (const row of rows) {
+    const name = titleCase(row.borough);
+    if (!boroughMap.has(name)) {
+      boroughMap.set(name, {
+        borough: name,
+        total: row.borough_total,
+        topCategories: [],
+      });
+    }
+    boroughMap.get(name)!.topCategories.push({
+      category: row.complaint_type,
+      count: row.count,
+      pct: Math.round((100 * row.count) / row.borough_total),
+      rank: row.rnk,
+    });
+  }
+
+  const boroughs = Array.from(boroughMap.values());
+
+  return {
+    stats: {
+      total_complaints: boroughs.reduce((s, b) => s + b.total, 0),
+      borough_count: boroughs.length,
+    },
+    boroughs,
+  };
+}
+
+// ============================================================
 // POTHOLES PAGE
 // ============================================================
 
